@@ -1,0 +1,212 @@
+:root {
+    /* color */
+    --primary-color: #fb5533;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-color-2: #222;
+    /* height */
+    --header-height: 120px;
+    --navbar-height: 28px;
+    --header-search-height: calc(var(--header-height) - var(--navbar-height))
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* responsive */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__row-10 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+/* test */
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+
+
+/* dùng chung */
+
+.shoppe-main-icon {
+    height: 39px;
+}
+
+.socials-png {
+    width: 22px;
+    height: 22px;
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/7b95007f3377150730bbb5d1ddb477d6.png);
+}
+
+.social-google-png {
+    background-size: 722.2222222222222% 638.8888888888889%;
+    background-position: 83.92857142857143% 5.154639175257732%;
+}
+
+.social-facebook-png {
+    background-size: 325% 287.5%;
+    background-position: 5.555555555555555% 62.666666666666664%;
+}
+
+.social-apple-png {
+    background-size: 406.25% 359.375%;
+    background-position: 5.10204% 6.0241%;
+}
+
+.btn {
+    height: 40px;
+    padding: 0 30px;
+    border: none;
+    color: var(--white-color);
+    background: var(--primary-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn--with-100 {
+    width: 100%;
+}
+
+.btn--cart {
+    height: 35px;
+    min-width: 124px;
+    text-transform: none;
+    padding: 0;
+    float: right;
+}
+
+.padding-none {
+    padding: 0 !important;
+}
+
+.height-login {
+    height: 456px !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.m-12 {
+    margin: 12px;
+}
+
+.border-radius-left {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.border-radius-right {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+/* animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    margin: auto;
+    background: var(--white-color);
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.modal__inner {}
